@@ -528,8 +528,10 @@ public class NewItemDialog extends JPanel {
             });
         } else {
             // если счётчиков нет уведомляем пользователя и закрываем окно
+            JOptionPane.showMessageDialog(this, "По данному объекту не задан УУГ.\nДля завершения действия необъодимо\n" +
+                    "добавить УУГ", "Consumer", JOptionPane.OK_OPTION);
             ok = false;
-            dialog.setVisible(ok);
+//            dialog.setVisible(ok);
         }
         
     }

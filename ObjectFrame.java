@@ -3083,7 +3083,7 @@ public class ObjectFrame extends javax.swing.JInternalFrame {
             boolean retval = dialog.showDialog(this);// получаем результат выбора пользоателя
             
             // проверяем сделанный пользователем выбор
-            if(retval) getEquipmentData();// обновляем данные по оборудованию
+            if(retval == true) getEquipmentData();// обновляем данные по оборудованию
         }
     }
     
